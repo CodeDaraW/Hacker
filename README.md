@@ -1,22 +1,25 @@
-# Hacker | [中文版文档](/README_zh-CN.md)
-__Hacker is a simple style of theme for blog, hoping you focus on writing more rather than the typesetting.__  
+A 46th fork of [Hacker theme](https://github.com/CodeDaraW/Hacker) for [Hexo](https://hexo.io/)
 
-At first, [moyo](http://liuxinyu.me/) designed and built it for Wordpress.  
-Later, DaraW ported it to Hexo.
 
-## Demo
-You can reference my blog: [DaraW](http://blog.daraw.cn/)
+## What's new
+
+- Added 'Read more' link to articles in Index page. Horray! Usage: add `<!-- more -->` to a post to cut it.
+
 
 ## Installation
-Firstly get all the theme files, `git clone` or `download zip` is okay.  
 
-Create a folder `Hacker` in the folder `themes`, and copy all the theme files to the folder `Hacker`.  
+Clone into `themes` folder:
+
+```bash
+$ git clone https://github.com/ciases/Hacker themes/Hacker
+```
 
 Then apply the theme in hexo global configuration file `_config.yml`:
 
 ```yaml
 theme: Hacker
 ```
+
 Now all is in order, just enjoy~
 
 __Notice: After every update, you'd better run command `hexo clean` to clean cache files before Hexo generating, in case of some problems cache files bring.__
@@ -39,26 +42,17 @@ googleTrackId:
 ```
 
 
-`duoshuo`: `boolean`, use duoshuo or not;  
+`duoshuo`: `boolean`, use duoshuo or not;
 `duoshuo_name`: `string`, your duoshup ID, please don't use other people's IDs。
 
-`disqus`: `boolean`, use disqus or not;  
+`disqus`: `boolean`, use disqus or not;
 `disqus_shortname`: your disqus site shortname.
 
 `googleTrackId`: your Google Analytics ID, Hacker will not use Google Analytics if it's empty.
 
-## Update
-### v0.3
-* Refactor ejs template files
-* Replace css with stylus
-* Add English Version README
 
-
-### v0.2
-* Remove some useless css
-* Fix bug that icon still shows when there are no categories or tags
-* Rewrite the archive index page
-* Change the display of code block
+## TODO
+- add screenshots
 
 
 ## License

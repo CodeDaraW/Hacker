@@ -28,13 +28,13 @@
   <% if (item.photos && item.photos.length){ %>
   <div class="featured-media">
     <% if (item.photos.length && !index){ %>
-      <% for (var i in item.photos) { %>
-      <img src="<%- item.photos[i] %>" class="attachment-post-thumbnail size-post-thumbnail">
-      <% } %>
+    <% for (var i in item.photos) { %>
+    <img src="<%- url_for(item.photos[i]) %>" class="attachment-post-thumbnail size-post-thumbnail">
+    <% } %>
     <% } else if (item.photos.length && index){ %>
-    <img src="<%- item.photos[0] %>" class="attachment-post-thumbnail size-post-thumbnail">
+    <img src="<%- url_for(item.photos[0]) %>" class="attachment-post-thumbnail size-post-thumbnail">
     <% } else { %>
-    <img src="<%- item.photos %>" class="attachment-post-thumbnail size-post-thumbnail">
+    <img src="<%- url_for(item.photos) %>" class="attachment-post-thumbnail size-post-thumbnail">
     <% } %>
   </div>
   <% } %>
@@ -43,6 +43,9 @@
     <div class="entry">
       <% if (item.excerpt && index){ %>
         <%- item.excerpt %>
+        <a href="<%- config.root %><%- item.path %>">
+          <%= theme.excerpt_link %>
+        </a>
       <% } else { %>
         <%- item.content %>
       <% } %>
@@ -88,7 +91,7 @@
       <span>
         <i class="icon-comments"></i>
         <span>
-          <a href="<%- item.permalink %>#comment"><%- __('comment') %></a>
+          <a href="<%- item.path %>#comment"><%- __('comment') %></a>
         </span>
       </span>
     </div>
