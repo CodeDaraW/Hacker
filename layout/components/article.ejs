@@ -43,6 +43,9 @@
     <div class="entry">
       <% if (item.excerpt && index){ %>
         <%- item.excerpt %>
+        <a href="<%- config.root %><%- item.path %>">
+          <%= theme.excerpt_link %>
+        </a>
       <% } else { %>
         <%- item.content %>
       <% } %>
