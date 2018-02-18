@@ -12,3 +12,5 @@ disqus_shortname:
 
 # google analytics
 googleTrackId:
+  
+mathjax: true
