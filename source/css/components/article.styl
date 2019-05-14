@@ -1,5 +1,6 @@
 $hackerRed = #f03838
 $hackerGray = #9e9e9e
+$hackerWhite = #fff
 $articleTitleColor = #212121
 $articleTextColor = #424242
 
@@ -124,6 +125,34 @@ article
           content ","
           padding-right 5px
 
+  .article-pagination
+    position relative
+    margin 20px 0 0 0
+    display -webkit-box
+    display -ms-flexbox
+    display -webkit-flex
+    display flex
+    -webkit-box-pack space-around
+    -ms-flex-pack space-around
+    -webkit-justify-content space-around
+    justify-content space-around
+
+    .pagination-prev
+    .pagination-next
+      color $hackerRed
+      font-size 1.6rem
+      border 1px solid #e0e0e0
+      line-height 30px
+      height 32px
+      padding 0 20px
+      border-radius 16px
+      -webkit-transition-duration 0.4s
+      transition-duration 0.4s
+
+      &:hover
+        color $hackerWhite
+        background-color $hackerRed
+        border-color $hackerRed
 
 
 

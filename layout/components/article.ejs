@@ -94,6 +94,19 @@
     </div>
     <% } %>
   </div>
+
+  <% if (!index && (item.prev || item.next)){ %>
+    <nav class="article-pagination">
+      <% if (item.prev){ %>
+        <a href="<%- url_for(item.prev.path) %>" class="pagination-prev"><%= __('prev') %></a>
+      <% } %>
+
+      <% if (item.next){ %>
+        <a href="<%- url_for(item.next.path) %>" class="pagination-next"><%= __('next') %></a>
+      <% } %>
+    </nav>
+  <% } %>
+
 </article>
 <% if (!index && (theme.disqus || theme.gitment || theme.valine)) { %>
   <%- partial('comment') %>
