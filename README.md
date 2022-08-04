@@ -89,7 +89,7 @@ baiduTrackId:
 ```
 
 `gitment`: `boolean`，use gitment or not  
-`gitment_owner`: `string`，your GitHub ID  
+`gitment_owner`: `string`，your GitHub ID    
 `gitment_repo`: `string`，the repo to store comment data  
 `gitment_client_id`: `string`，your client ID  
 `gitment_client_secret`: `string`，your client secret  
@@ -109,23 +109,23 @@ baiduTrackId:
 `disqus_shortname`: your disqus site shortname.
 
 `utterances`: `boolean`, use utterances or not  
-`utterances_repo`:
+`utterances_repo`: `string`，the repo to store comment data
 
 `livere`: `boolean`, use livere city or not  
 `livere_data_uid`: `string`，you can find it here https://livere.com/insight/myCode
 
 `giscus`: `boolean`, use giscus or not  
-`data_repo`: myusername/myrepo  
+`data_repo`: `string`，the repo to store comment data   
 `data_repo_id`: `string`，You can get it eaily from https://giscus.app  
 `data_category`: When searching for a matching discussion, giscus will only search in this category.  
 `data_category_id`: `string`，You can get it eaily from https://giscus.app . It is recommended to use a category with the Announcements type.  
-`data_mapping`: pathname or URL or title or og:title or specific or number  
+`data_mapping`: Enter pathname or URL or title or og:title or specific or number  
 `data_term`: If you choose specific or number in data_mapping , please turn on this option and ENTER TERM or NUMBER HERE.  
 `data_strict`: `boolean`, use strict title matching or not  
 `data_reactions_enabled`: `boolean`, enable reactions for the main post or not  
 `data_emit_metadata`: `boolean`, emit discussion metadata or not  
-`data_input_position`: top or bottom  
-`data_loading`: Enter "lazy" or keep blank  
+`data_input_position`: Enter "top" or "bottom" to place the comment box above the comments or below the comments    
+`data_loading`: Enter "lazy" to Load the comments lazily or keep blank  
 `data_lang`:  The language giscus will be displayed in.
 
 `googleTrackId`: your Google Analytics ID, Hacker will not use Google Analytics if it's empty.
