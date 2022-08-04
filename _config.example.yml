@@ -26,6 +26,29 @@ leancloud_key:
 disqus: false
 disqus_shortname:
 
+# utterances comment
+utterances: false
+utterances_repo:
+
+# livere city comment
+livere: false
+livere_data_uid:
+
+# giscus comment
+giscus: false
+data_repo: #myusername/myrepo It should be a public GitHub repository. This repo is where the discussions will be linked to.
+data_repo_id: #You can get it eaily from https://giscus.app
+data_category: Announcements #When searching for a matching discussion, giscus will only search in this category.
+data_category_id: #You can get it eaily from https://giscus.app . It is recommended to use a category with the Announcements type.
+data_mapping: pathname #pathname or URL or title or og:title or specific or number
+#data_term: If you choose specific or number in data_mapping , please turn on this option and ENTER TERM or NUMBER HERE.
+data_strict: 0
+data_reactions_enabled: 0
+data_emit_metadata: 0
+data_input_position: bottom #top or bottom
+data_loading: lazy #Enter "lazy" or keep blank
+data_lang: en
+
 # google analytics
 googleTrackId:
 
@@ -34,6 +57,3 @@ baiduTrackId:
 
 # whether to show read more button when showing article in excerpt in main page
 read_more_btn: false
-
-utterances: false
-utterances_repo:
