@@ -58,6 +58,29 @@ leancloud_key:
 disqus: false
 disqus_shortname:
 
+# utterances comment
+utterances: false
+utterances_repo:
+
+# livere city comment
+livere: false
+livere_data_uid:
+
+# giscus comment
+giscus: false
+data_repo: 
+data_repo_id: 
+data_category: 
+data_category_id: 
+data_mapping: 
+#data_term: 
+data_strict: 0
+data_reactions_enabled: 0
+data_emit_metadata: 0
+data_input_position: bottom 
+data_loading: 
+data_lang: 
+
 # google analytics
 googleTrackId:
 
@@ -78,15 +101,35 @@ baiduTrackId:
 `gitalk_client_id`: `string`，your client ID 
 `gitalk_client_secret`: `string`，your client secret  
 
-
 `valine`: `boolean`, use Valine or not  
 `leancloud_id`: `string`, your leancloud ID  
 `leancloud_key`: `string`, your leancloud Key  
 
-`disqus`: `boolean`, use disqus or not;  
+`disqus`: `boolean`, use disqus or not
 `disqus_shortname`: your disqus site shortname.
 
+`utterances`: `boolean`, use utterances or not  
+`utterances_repo`:
+
+`livere`: `boolean`, use livere city or not  
+`livere_data_uid`: `string`，you can find it here https://livere.com/insight/myCode
+
+`giscus`: `boolean`, use giscus or not  
+`data_repo`: myusername/myrepo  
+`data_repo_id`: `string`，You can get it eaily from https://giscus.app  
+`data_category`: When searching for a matching discussion, giscus will only search in this category.  
+`data_category_id`: `string`，You can get it eaily from https://giscus.app . It is recommended to use a category with the Announcements type.  
+`data_mapping`: pathname or URL or title or og:title or specific or number  
+`data_term`: If you choose specific or number in data_mapping , please turn on this option and ENTER TERM or NUMBER HERE.  
+`data_strict`: `boolean`, use strict title matching or not  
+`data_reactions_enabled`: `boolean`, enable reactions for the main post or not  
+`data_emit_metadata`: `boolean`, emit discussion metadata or not  
+`data_input_position`: top or bottom  
+`data_loading`: Enter "lazy" or keep blank  
+`data_lang`:  The language giscus will be displayed in.
+
 `googleTrackId`: your Google Analytics ID, Hacker will not use Google Analytics if it's empty.
+
 `baiduTrackId`: your Baidu Analytics ID, Hacker will not use Baidu Analytics if it's empty.
 
 ### Enable Categories and Tags pages
