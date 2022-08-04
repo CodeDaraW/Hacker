@@ -57,6 +57,29 @@ leancloud_key:
 disqus: false
 disqus_shortname:
 
+# utterances comment
+utterances: false
+utterances_repo:
+
+# livere city comment
+livere: false
+livere_data_uid:
+
+# giscus comment
+giscus: false
+data_repo: 
+data_repo_id: 
+data_category: 
+data_category_id: 
+data_mapping: 
+#data_term: 
+data_strict: 0
+data_reactions_enabled: 0
+data_emit_metadata: 0
+data_input_position: bottom 
+data_loading: 
+data_lang:
+
 # google analytics
 googleTrackId:
 
@@ -81,10 +104,31 @@ baiduTrackId:
 `leancloud_id`: `string`，你的 LeanCloud ID  
 `leancloud_key`: `string`，你的 LeanCloud Key  
 
-`disqus`: `boolean`，是否开启 Disqus 评论；  
+`disqus`: `boolean`，是否开启 Disqus 评论  
 `disqus_shortname`: `string`，你的 Disqus Site Shortname。  
 
+`utterances`: `boolean`， 是否开启 utterances 评论  
+`utterances_repo`: `string`，存储评论的 Repo
+
+`livere`: `boolean`，是否开启 LiveRe City 评论  
+`livere_data_uid`: `string`，可以在这里找到 https://livere.com/insight/myCode
+
+`giscus`: `boolean`，是否开启 giscus 评论  
+`data_repo`: `string`，存储评论的 Repo  
+`data_repo_id`: `string`，可从 https://giscus.app 轻松获取此 ID   
+`data_category`: 当搜索匹配的 discussion 时，giscus 将只搜索该分类  
+`data_category_id`: `string`，可从 https://giscus.app 轻松获取此 ID ， 推荐使用公告（announcements）类型的分类   
+`data_mapping`: 输入 pathname 或者 URL 或者 title 或者 og:title 或者 specific 或者 number   
+`data_term`: 如果在 data_mapping （页面与 Discussion 映射关系）中选择了 specific （特定字符串）或者 number （特定 discussion 号），请打开这个选项然后输入字符或者 discussion 号  
+`data_strict`: `boolean`，是否使用严格的标题匹配  
+`data_reactions_enabled`: `boolean`，是否启用主帖子上的反应（reaction）   
+`data_emit_metadata`: `boolean`，是否输出 discussion 的元数据  
+`data_input_position`: 输入 top 或者 bottom 将评论框放在评论上方或下方    
+`data_loading`: 输入“lazy”或者保持空白，以开启或关闭懒加载评论    
+`data_lang`: giscus 的显示语言
+
 `googleTrackId`: `string`，为谷歌分析的个人ID，留空则为不使用谷歌分析。
+
 `baiduTrackId`: `string`, 为百度统计的个人ID,留空则为不是用谷歌分析。
 
 ### 启用分类和标签页面
