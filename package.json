@@ -1,0 +1,19 @@
+{
+  "name": "hexo-theme-hacker",
+  "version": "1.0.0",
+  "description": "Hacker is a simple blog theme focused on writing. In such a trend of complex typography, choose the return to origins, focusing on writing this matter.",
+  "main": "_config.yml",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeDaraW/Hacker.git"
+  },
+  "author": "https://github.com/CodeDaraW",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/CodeDaraW/Hacker/issues"
+  },
+  "homepage": "https://github.com/CodeDaraW/Hacker#readme"
+}

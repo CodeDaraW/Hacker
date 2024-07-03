@@ -27,6 +27,13 @@ Now all are in order, just enjoy~
 
 __Notice: After every update, you'd better run command `hexo clean` to clean cache files before Hexo generating, in case of some problems cache files bring.__
 
+## Quick Start
+
+```shell
+npm i hexo-theme-hacker
+wget https://raw.githubusercontent.com/CodeDaraW/Hacker/master/_config.example.yml -O _config.hacker.yml
+hexo s
+```
 
 ## Configure
 ### Enable comments and Google Analytics
